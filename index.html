@@ -16,23 +16,25 @@
             font-family: Arial, sans-serif;
         }
 
-        #connectButton {
+        .connectButton {
             padding: 10px 20px;
             background-color: #4CAF50; /* Green background */
             color: white;
+            text-decoration: none; /* Removes underline from links */
             border: none;
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
             text-align: center;
+            display: inline-block; /* Allows padding and width/height */
         }
 
-        #connectButton:hover {
+        .connectButton:hover {
             background-color: #45a049; /* Darker green on hover */
         }
 
         @media (max-width: 600px) {
-            #connectButton {
+            .connectButton {
                 padding: 15px 30px;
                 font-size: 18px;
             }
@@ -40,12 +42,6 @@
     </style>
 </head>
 <body>
-    <button id="connectButton">Nhắp để kết nối Internet</button>
-
-    <script>
-        document.getElementById('connectButton').addEventListener('click', function() {
-            window.location.href = 'https://shope.ee/8A75vRIAPH';
-        });
-    </script>
+    <a href="https://shope.ee/8A75vRIAPH" class="connectButton">Nhắp để kết nối Internet</a>
 </body>
 </html>
