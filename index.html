@@ -1,1 +1,40 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Connect to Internet</title>
+    <style>
+        body {
+            background-color: #ADD8E6; /* Light blue background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #connectButton {
+            padding: 10px 20px;
+            background-color: #4CAF50; /* Green background */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #connectButton:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body>
+    <button id="connectButton">Nhắp để kết nối Internet</button>
+
+    <script>
+        document.getElementById('connectButton').addEventListener('click', function() {
+            window.location.href = 'https://google.com';
+        });
+    </script>
+</body>
+</html>
