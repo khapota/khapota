@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            background-color: #ADD8E6; /* Light blue background */
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             font-family: Arial, sans-serif;
+            background-image: url('images/background.png'); /* Replace with the path to the downloaded image */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
         }
 
         .connectButton {
@@ -27,6 +29,7 @@
             font-size: 16px;
             text-align: center;
             display: inline-block; /* Allows padding and width/height */
+            margin-bottom: 20px;
         }
 
         .connectButton:hover {
