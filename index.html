@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Connect to Internet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             background-color: #ADD8E6; /* Light blue background */
+            margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
+            font-family: Arial, sans-serif;
         }
 
         #connectButton {
@@ -21,10 +24,18 @@
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
+            text-align: center;
         }
 
         #connectButton:hover {
             background-color: #45a049; /* Darker green on hover */
+        }
+
+        @media (max-width: 600px) {
+            #connectButton {
+                padding: 15px 30px;
+                font-size: 18px;
+            }
         }
     </style>
 </head>
